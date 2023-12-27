@@ -1,11 +1,17 @@
 
-FROM ubi9/nodejs-18
+FROM node:20
 
-WORKDIR /dist
+WORKDIR /client
 
-COPY /dist /dist
+COPY package*.json ./
 
-EXPOSE 5173
+RUN npm i
 
-CMD [ "npm", "run", "prod" ]
+COPY . .
+
+ENV PORT=
+
+EXPOSE 5174
+
+CMD [ "npm", "run", "dev" ]
 

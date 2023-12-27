@@ -4,8 +4,7 @@ import { Toaster } from 'sonner';
 
 import { ThemeProvider } from "@/config/theme-provider";
 
-import App from "@/pages/App";
-import Projects from "@/pages/Projects";
+import Home from "@/pages/Home";
 
 import "@/style/index.css";
 import "@/style/layouts.css"
@@ -15,10 +14,9 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="/project" element={<Projects />} />
+                <Route path="/" element={<Home />}></Route>
             </Routes>
             <Toaster richColors />
         </BrowserRouter>
-  </ThemeProvider>
+  </ThemeProvider>,
 );
