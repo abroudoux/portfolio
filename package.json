@@ -1,5 +1,7 @@
 {
-    "name": "react-template",
+    "name": "portfolio",
+    "description": "My portfolio - 2024",
+    "author": "Arthur Broudoux",
     "version": "0.1.0",
     "scripts": {
         "dev": "vite",

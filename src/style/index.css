@@ -110,3 +110,6 @@ body::-webkit-scrollbar {
   @apply flex-col-center justify-center;
 }
 
+.section {
+  @apply w-screen h-screen
+}
