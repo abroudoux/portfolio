@@ -1,3 +1,14 @@
+import { motion } from "framer-motion";
+
+import "@/style/animated-bg.scss"
+
+
+const itemVariants = {
+  	hidden: { opacity: 0, y: 10 },
+  	visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+
 export default function Home() {
 	return (
 		<section className="section flex-col-center-center px-4 py-4 relative" id="home">
@@ -11,10 +22,10 @@ export default function Home() {
 						</span>
 					</h1>
 				</div>
-				<div className="w-full h-auto flex-row-center-between px-12 py-12 text-2xl">
-					<p>2024</p>
-					<p>Angers, France</p>
-				</div>
+				<motion.div className="w-full h-auto flex-row-center-between px-12 py-10 text-2xl" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
+					<motion.p variants={itemVariants}>2024</motion.p>
+					<motion.p variants={itemVariants}>Angers, France</motion.p>
+				</motion.div>
 			</div>
 			<div className="blob-c">
 				<div className="shape-blob"></div>

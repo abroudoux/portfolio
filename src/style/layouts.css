@@ -1,0 +1,23 @@
+.flex-col-center {
+    @apply flex flex-col items-center;
+}
+
+.flex-row-center {
+    @apply flex flex-row items-center;
+}
+
+.flex-row-start-between {
+    @apply flex flex-row items-start justify-between;
+}
+
+.flex-row-center-between {
+    @apply flex-row-center justify-between;
+}
+
+.flex-row-center-center {
+    @apply flex-row-center justify-center;
+}
+
+.flex-col-center-center {
+    @apply flex-col-center justify-center;
+}
