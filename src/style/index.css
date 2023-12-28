@@ -71,8 +71,10 @@
     * {
         @apply border-border;
     }
-    body {
+    body, html {
         @apply bg-background text-foreground;
+        scroll-snap-type: y mandatory;
+        block-size: 100%;
     }
 }
 
@@ -111,7 +113,17 @@ body::-webkit-scrollbar {
 }
 
 .section {
-    @apply w-screen h-screen
+    @apply w-screen h-screen;
+}
+
+section {
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+    block-size: 100%;
+}
+
+.active {
+    @apply bg-white text-background border-white rounded-lg;
 }
 
 .blob-c {

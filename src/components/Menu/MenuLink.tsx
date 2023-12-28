@@ -9,7 +9,7 @@ type MenuLinkProps = {
 const MenuLink : FC<MenuLinkProps> = ( props ) => {
     return (
         <li className="w-full h-full">
-            <a href={ props.ref } className="flex-col-center-center">
+            <a href={ props.ref } className="w-full h-full flex-col-center-center">
                 { props.title }
             </a>
         </li>
