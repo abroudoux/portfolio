@@ -7,8 +7,6 @@ import { ThemeProvider } from "@/config/theme-provider";
 import App from "@/pages/App";
 import Projects from "@/pages/Projects";
 
-import Footer from "@/components/Footer";
-
 import "@/style/index.css";
 
 
@@ -19,7 +17,6 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement,
                 <Route path="/" element={<App />} />
                 <Route path="/project" element={<Projects />} />
             </Routes>
-            <Footer />
             <Toaster richColors />
         </BrowserRouter>
   </ThemeProvider>
