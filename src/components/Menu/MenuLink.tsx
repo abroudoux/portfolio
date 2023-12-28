@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 
 type MenuLinkProps = {
@@ -7,8 +7,11 @@ type MenuLinkProps = {
 };
 
 const MenuLink : FC<MenuLinkProps> = ( props ) => {
+
+    const [activeSection, setActiveSection] = useState("#home");
+
     return (
-        <li className="w-full h-full">
+        <li className={`w-full h-full ${activeSection === props.ref ? "active" : ""}`}>
             <a href={ props.ref } className="w-full h-full flex-col-center-center">
                 { props.title }
             </a>
