@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
 }
 
 .section {
-    @apply w-screen h-screen;
+    @apply w-screen h-screen px-6 py-6;
 }
 
 section {
@@ -99,12 +99,11 @@ section {
 }
 
 .active {
-    @apply bg-white text-background border-white rounded-lg;
+    @apply bg-white text-background border-white rounded-3xl;
 }
 
 .cursor {
     @apply fixed w-6 h-6 bg-white rounded-full pointer-events-none mix-blend-difference;
-    transform: translate(-50%, -50%);
 }
 
 h1:hover ~ .cursor  {

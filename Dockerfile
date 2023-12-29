@@ -1,9 +1,9 @@
 
 FROM ubi9/nodejs-18
 
-WORKDIR /dist
+WORKDIR /build
 
-COPY /dist /dist
+COPY /build /build
 
 EXPOSE 5173
 

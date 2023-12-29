@@ -30,28 +30,32 @@ export default function Menu() {
   }, []);
 
     return (
-        <nav className="w-2/6 h-16 border-2 fixed bottom-10 rounded-lg bg-background">
+        <nav className="h-12 w-auto border-2 fixed bottom-12 rounded-3xl backdrop-blur-xl text-sm">
             <ul className="flex-row-center-between w-full h-full">
-                <li className={`w-full h-full ${activeSection === "#home" ? "active" : ""}`}>
-                    <a href="#home" className="w-full h-full flex-col-center-center text-xl">
+                <MenuLink section="home" />
+                <MenuLink section="projects" />
+                <MenuLink section="about" />
+                <MenuLink section="contact" />
+                {/* <li className={`w-full h-full ${activeSection === "#home" ? "active" : ""}`}>
+                    <a href="#home" className="w-full h-full flex-col-center-center py-3 px-6">
                         home
                     </a>
                 </li>
                 <li className={`w-full h-full ${activeSection === "#projects" ? "active" : ""}`}>
-                    <a href="#projects" className="w-full h-full flex-col-center-center text-xl">
+                    <a href="#projects" className="w-full h-full flex-col-center-center py-3 px-6">
                         projects
                     </a>
                 </li>
                 <li className={`w-full h-full ${activeSection === "#about" ? "active" : ""}`}>
-                    <a href="#about" className="w-full h-full flex-col-center-center text-xl">
+                    <a href="#about" className="w-full h-full flex-col-center-center py-3 px-6">
                         about
                     </a>
                 </li>
                 <li className={`w-full h-full ${activeSection === "#contact" ? "active" : ""}`}>
-                    <a href="#contact" className="w-full h-full flex-col-center-center text-xl">
+                    <a href="#contact" className="w-full h-full flex-col-center-center py-3 px-6">
                         contact
                     </a>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
-import "@/style/animated-bg.scss"
+import "@/style/animated-bg.scss";
+
+import MenuLink from "@/components/Menu/MenuLink";
 
 
 const itemVariants = {
@@ -11,7 +13,7 @@ const itemVariants = {
 
 export default function Home() {
 	return (
-		<section className="section flex-col-center-center px-4 py-4 relative" id="home">
+		<section className="section flex-col-center-center relative" id="home">
 			<div className="w-full h-full rounded-lg flex-col-center-center backdrop-blur-sm border-2">
 				<div className="w-full h-full flex-col-center-center max-w-5xl text-center">
 					<h1 className="flex-col-center-center gap-16">
@@ -27,6 +29,7 @@ export default function Home() {
 					<motion.p variants={itemVariants}>Angers, France</motion.p>
 				</motion.div>
 			</div>
+
 			<div className="blob-c">
 				<div className="shape-blob"></div>
 				<div className="shape-blob one"></div>
