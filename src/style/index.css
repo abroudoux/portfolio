@@ -103,15 +103,9 @@ section {
 }
 
 .cursor {
-    @apply fixed w-5 h-5 bg-white rounded-full pointer-events-none mix-blend-difference;
+    @apply fixed w-4 h-4 bg-white rounded-full pointer-events-none mix-blend-difference;
 }
 
-.cursor-project {
-    @apply fixed w-6 h-6 bg-red-400 rounded-full pointer-events-none mix-blend-difference;
+.cursor-hover {
+    @apply fixed w-20 h-20 bg-white rounded-full pointer-events-none mix-blend-difference;
 }
-
-h1:hover ~ .cursor  {
-    transform: scale(3);
-}
-
-

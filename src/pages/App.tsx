@@ -12,7 +12,7 @@ import Menu from "@/components/Menu/Menu";
 
 export default function App() {
 
-    const isProjectCardHovered = useStore((state) => state.isProjectCardHovered);
+    const { isProjectCardHovered, isTextHovered } = useStore();
 
     useEffect(() => {
         const cursor: HTMLSpanElement | null = document.querySelector('.cursor');
@@ -38,7 +38,7 @@ export default function App() {
             <About />
             <Contact />
             <Menu />
-            <div className={`${isProjectCardHovered ? 'cursor' : 'cursor'}`}></div>
+            <div className={`${isProjectCardHovered || isTextHovered ? 'cursor-hover' : 'cursor'}`}></div>
         </>
     );
 };
