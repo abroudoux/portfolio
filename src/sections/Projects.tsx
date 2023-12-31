@@ -9,12 +9,12 @@ export default function Projects() {
             </div>
             <div className="w-full h-full flex-col-center-center gap-3">
                 <div className="w-full h-2/4 py-1 flex-row-center-between gap-4">
-                    <ProjectCard width="3/4" title="test" />
-                    <ProjectCard width="1/4" title="test" />
+                    <ProjectCard title="test" />
+                    <ProjectCard title="test" />
                 </div>
                 <div className="w-full h-2/4 py-1 flex-row-center-between gap-4">
-                    <ProjectCard width="1/4" title="Wanna see more ?" link="https://github.com/abroudoux" />
-                    <ProjectCard width="3/4" title="test" />
+                    <ProjectCard title="Wanna see more ?" link="https://github.com/abroudoux" />
+                    <ProjectCard title="test" />
                 </div>
             </div>
         </section>

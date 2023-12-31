@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import useStore from "@/lib/store";
+
 import Home from "@/sections/Home";
 import Projects from "@/sections/Projects";
 import About from "@/sections/About";
@@ -9,6 +11,8 @@ import Menu from "@/components/Menu/Menu";
 
 
 export default function App() {
+
+    const isProjectCardHovered = useStore((state) => state.isProjectCardHovered);
 
     useEffect(() => {
         const cursor: HTMLSpanElement | null = document.querySelector('.cursor');
@@ -34,7 +38,7 @@ export default function App() {
             <About />
             <Contact />
             <Menu />
-            <div className="cursor"></div>
+            <div className={`${isProjectCardHovered ? 'cursor' : 'cursor'}`}></div>
         </>
     );
 };
