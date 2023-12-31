@@ -26,7 +26,7 @@ export default function Home() {
 				</div>
 				<motion.div className="w-full h-auto flex-row-center-between px-12 py-10 text-2xl" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
 					<motion.p variants={itemVariants}>2024</motion.p>
-					<motion.p variants={itemVariants}>Angers, France</motion.p>
+					<motion.p variants={itemVariants}>angers, france</motion.p>
 				</motion.div>
 			</div>
 
