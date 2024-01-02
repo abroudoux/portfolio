@@ -103,11 +103,11 @@ section {
 }
 
 .cursor {
-    @apply fixed w-4 h-4 bg-white rounded-full pointer-events-none mix-blend-difference;
+    @apply fixed w-4 h-4 bg-white rounded-full pointer-events-none mix-blend-difference z-50;
     transform: translate (-50%, -50%)
 }
 
 .cursor-hover {
-    @apply fixed w-28 h-28 bg-background border-2 border-white rounded-full pointer-events-none mix-blend-difference;
+    @apply fixed w-28 h-28 bg-background border-2 border-white rounded-full pointer-events-none mix-blend-difference z-50;
     transform: translate (-50%, -50%);
 }

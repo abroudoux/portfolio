@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Asterisk } from "lucide-react";
 
 import useStore from "@/lib/store";
 
@@ -20,13 +21,18 @@ export default function Home() {
 
 	return (
 		<section className="section flex-col-center-center relative" id="home">
-			<motion.div className="w-full h-full rounded-xl flex-col-center-center backdrop-blur-sm border-2" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
-				<div className="w-full h-full flex-col-center-center max-w-5xl text-center">
-					<h1 className="flex-col-center-center gap-16">
-						<motion.span variants={itemVariants} className="text-6xl">Hey, 👋 I am</motion.span>
-						<motion.span variants={itemVariants} className="text-8xl font-semibold">arthur</motion.span>
-						<motion.span variants={itemVariants} className="text-6xl max-w-xl font-light">
-							<span className="font-semibold">frontend developer</span> and <span className="font-semibold">creative coder</span>
+			<motion.div className="w-full h-full rounded-xl flex-col-center-center backdrop-blur-sm border-2 z-10" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
+				<div className="w-full h-full flex-col-center-center text-center">
+					<h1 className="flex-col-center-center gap-12 font-normal text-5xl flex-col-center-center">
+						<motion.span variants={itemVariants}>Hey, 👋 I am</motion.span>
+						<motion.span variants={itemVariants} className="text-9xl font-semibold my-4">arthur</motion.span>
+						<motion.span variants={itemVariants} className="max-w-2xl flex-row-center-center hover:italic transition-all group">
+							<Asterisk className="w-12 h-12 group-hover:animate-spin" />
+							web developer
+							<Asterisk className="w-12 h-12 group-hover:animate-spin" />
+						</motion.span>
+						<motion.span variants={itemVariants} className="inline">
+							and <span className="border-2 border-white rounded-3xl px-3 py-1 transition-all hover:rounded-lg">creative coder</span>
 						</motion.span>
 					</h1>
 				</div>
