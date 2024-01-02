@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Asterisk } from "lucide-react";
 
 import useStore from "@/lib/store";
-
 import { itemVariants } from "@/lib/animations";
+
 import "@/style/animated-bg.scss";
 
 
@@ -23,10 +23,10 @@ export default function Home() {
 		<section className="section flex-col-center-center relative" id="home">
 			<motion.div className="w-full h-full rounded-xl flex-col-center-center backdrop-blur-sm border-2 z-10" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
 				<div className="w-full h-full flex-col-center-center text-center">
-					<h1 className="flex-col-center-center gap-12 font-normal text-5xl flex-col-center-center">
-						<motion.span variants={itemVariants}>Hey, 👋 I am</motion.span>
-						<motion.span variants={itemVariants} className="text-9xl font-semibold my-4">arthur</motion.span>
-						<motion.span variants={itemVariants} className="max-w-2xl flex-row-center-center hover:italic transition-all group">
+					<h1 className="flex-col-center-center font-normal text-6xl flex-col-center-center tracking-wide">
+						<motion.span variants={itemVariants}>Hey 👋 I am</motion.span>
+						<motion.span variants={itemVariants} className="text-9xl font-semibold my-12">arthur</motion.span>
+						<motion.span variants={itemVariants} className="flex-row-center-center hover:italic transition-all group mb-8">
 							<Asterisk className="w-12 h-12 group-hover:animate-spin" />
 							web developer
 							<Asterisk className="w-12 h-12 group-hover:animate-spin" />
