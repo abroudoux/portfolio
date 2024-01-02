@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 import useStore from "@/lib/store";
 
@@ -27,7 +29,7 @@ export default function App() {
         window.addEventListener('mousemove', (e) => handleCursor(e));
 
         return () => {
-              window.removeEventListener('mousemove', (e) => handleCursor(e));
+            window.removeEventListener('mousemove', (e) => handleCursor(e));
         };
     }, []);
 
@@ -38,7 +40,13 @@ export default function App() {
             <About />
             <Contact />
             <Menu />
-            <div className={`${isProjectCardHovered || isTextHovered ? 'cursor-hover' : 'cursor'}`}></div>
+            <motion.div className={`${isProjectCardHovered || isTextHovered ? 'cursor-hover' : 'cursor'} flex-col-center-center`}>
+                {isProjectCardHovered && (
+                    <motion.div initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0, opacity: 0 }} transition={{ duration: 0.3 }}>
+                        <ArrowUpRight className="w-8 h-8" />
+                    </motion.div>
+                )}
+            </motion.div>
         </>
     );
 };
