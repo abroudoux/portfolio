@@ -21,3 +21,7 @@
 .flex-col-center-center {
     @apply flex-col-center justify-center;
 }
+
+.flex-col-start-between {
+    @apply flex flex-col items-start justify-between;
+}

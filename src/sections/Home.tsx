@@ -20,7 +20,7 @@ export default function Home() {
 
 	return (
 		<section className="section flex-col-center-center relative" id="home">
-			<motion.div className="w-full h-full rounded-lg flex-col-center-center backdrop-blur-sm border-2" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
+			<motion.div className="w-full h-full rounded-xl flex-col-center-center backdrop-blur-sm border-2" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
 				<div className="w-full h-full flex-col-center-center max-w-5xl text-center">
 					<h1 className="flex-col-center-center gap-16">
 						<motion.span variants={itemVariants} className="text-6xl">Hey, 👋 I am</motion.span>
