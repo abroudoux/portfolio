@@ -108,6 +108,6 @@ section {
 }
 
 .cursor-hover {
-    @apply fixed w-28 h-28 bg-background border-2 border-white rounded-full pointer-events-none mix-blend-difference z-50;
+    @apply fixed w-28 h-28 bg-transparent border-2 border-white rounded-full pointer-events-none mix-blend-difference z-50;
     transform: translate (-50%, -50%);
 }

@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 
 import useStore from "@/lib/store";
 
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 
 type ProjectCardProps = {
@@ -11,6 +11,7 @@ type ProjectCardProps = {
     tags : string[];
     link : string;
     image ? : string;
+    size ? : string;
 };
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
@@ -34,12 +35,12 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
 
     return (
         <div className={`relative w-full h-full rounded-xl hover:rounded-none border-2 border-grey-light overflow-hidden group transition-all`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-90 transition-opacity"></div>
+            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity z-10"></div>
             <a href={ props.link } className="w-full h-full flex-col-center-center relative">
                 <div className="w-full h-full flex-col-center-center">
-                    <img src={ props.image } alt="" className="w-36 h-auto" />
+                    <img src={ props.image } alt="" className={`${props.size === 'xs' ? 'w-36 h-auto ' : 'w-full h-auto bg-cover'}`} />
                 </div>
-                <motion.div className="w-full h-full flex-col-start-between absolute py-4 px-4">
+                <motion.div className="w-full h-full flex-col-start-between absolute py-4 px-4 z-20">
                     <motion.p animate={controlsTopProjectCard} initial={{ y: 50, opacity: 0 }} transition={{ duration: 0.1 }}>
                         {props.tags.map((tag, index) => (
                             <Badge key={index} variant="outline">{ tag }</Badge>

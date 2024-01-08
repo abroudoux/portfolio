@@ -23,7 +23,7 @@ export default function Home() {
 		<section className="section flex-col-center-center relative" id="home">
 			<motion.div className="w-full h-full rounded-xl flex-col-center-center backdrop-blur-sm border-2 z-10" initial="hidden" animate="visible" exit={{ opacity: 0, transition: { duration: 1 } }} variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
 				<div className="w-full h-full flex-col-center-center text-center">
-					<h1 className="flex-col-center-center font-normal text-6xl flex-col-center-center tracking-wide">
+					<h1 className="flex-col-center-center font-normal text-5xl flex-col-center-center tracking-wide">
 						<motion.span variants={itemVariants}>Hey 👋 I am</motion.span>
 						<motion.span variants={itemVariants} className="text-9xl font-semibold my-12">arthur</motion.span>
 						<motion.span variants={itemVariants} className="flex-row-center-center hover:italic transition-all group mb-8">

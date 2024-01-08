@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/project/:id" element={<Project />} />
+                <Route path="/projects/:title" element={<Project />} />
             </Routes>
             {/* <RouterProvider router={router} /> */}
             <Toaster richColors />
