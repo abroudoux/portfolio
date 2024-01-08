@@ -22,5 +22,5 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
             {/* <RouterProvider router={router} /> */}
             <Toaster richColors />
         </BrowserRouter>
-  </ThemeProvider>
+    </ThemeProvider>
 );

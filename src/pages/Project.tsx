@@ -1,10 +1,17 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import projectsData from "@/data/projects";
+
 
 export default function Project() {
 
     const { title } = useParams();
+    // const project = projectsData[title];
+
+    // if (!project) {
+    //     return <div>Projet non trouvé</div>;
+    // };
 
     return (
         <section className="section flex-col-center-center relative">
