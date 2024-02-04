@@ -1,11 +1,9 @@
+FROM node:21
 
-FROM ubi9/nodejs-18
+WORKDIR /dist
 
-WORKDIR /build
-
-COPY /build /build
+COPY /dist /dist
 
 EXPOSE 5173
 
 CMD [ "npm", "run", "prod" ]
-

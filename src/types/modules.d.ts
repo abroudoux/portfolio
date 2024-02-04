@@ -1,2 +1,2 @@
-declare module '*.png';
-declare module '*.ts';
+declare module "*.png";
+declare module "*.ts";

@@ -1,31 +1,31 @@
 .flex-col-center {
-    @apply flex flex-col items-center;
+  @apply flex flex-col items-center;
 }
 
 .flex-row-center {
-    @apply flex flex-row items-center;
+  @apply flex flex-row items-center;
 }
 
 .flex-row-start-between {
-    @apply flex flex-row items-start justify-between;
+  @apply flex flex-row items-start justify-between;
 }
 
 .flex-row-center-between {
-    @apply flex-row-center justify-between;
+  @apply flex-row-center justify-between;
 }
 
 .flex-row-center-center {
-    @apply flex-row-center justify-center;
+  @apply flex-row-center justify-center;
 }
 
 .flex-row-start-start {
-    @apply flex-row items-start justify-start;
+  @apply flex-row items-start justify-start;
 }
 
 .flex-col-center-center {
-    @apply flex-col-center justify-center;
+  @apply flex-col-center justify-center;
 }
 
 .flex-col-start-between {
-    @apply flex flex-col items-start justify-between;
+  @apply flex flex-col items-start justify-between;
 }
