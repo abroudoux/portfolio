@@ -8,6 +8,7 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import ChoosifyBg from "@/assets/img/choosify-bg.png";
 import CatsAPIBg from "@/assets/img/cats-api-bg.png";
 import GithubLogo from "@/assets/img/logo-github.png";
+import SpotifyAutopush from "@/assets/img/spotify-autopush.png";
 
 export default function Projects() {
   const scrollRef = useRef(null);
@@ -61,7 +62,12 @@ export default function Projects() {
             />
           </motion.div>
           <motion.div className="w-3/4 h-full" variants={itemVariants}>
-            <ProjectCard title="test" link="/" tags={["personal project"]} />
+            <ProjectCard
+              title="spotify-autopush"
+              link="/projects/spotify-autopush"
+              tags={["personal project", "python", "spotify-api"]}
+              image={SpotifyAutopush}
+            />
           </motion.div>
         </div>
       </motion.div>

@@ -11,6 +11,7 @@ type ProjectCardProps = {
   link: string;
   image?: string;
   size?: string;
+  status?: string;
 };
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
@@ -36,7 +37,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity z-10"></div>
       <a
         href={props.link}
         className="w-full h-full flex-col-center-center relative"
@@ -51,17 +52,32 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
           />
         </div>
         <motion.div className="w-full h-full flex-col-start-between absolute py-4 px-4 z-20">
-          <motion.p
-            animate={controlsTopProjectCard}
-            initial={{ y: 50, opacity: 0 }}
-            transition={{ duration: 0.1 }}
-          >
-            {props.tags.map((tag, index) => (
-              <Badge key={index} variant="outline">
-                {tag}
-              </Badge>
-            ))}
-          </motion.p>
+          <div className="w-full h-auto flex-row-center-between">
+            <motion.p
+              animate={controlsTopProjectCard}
+              initial={{ y: 50, opacity: 0 }}
+              transition={{ duration: 0.1 }}
+              className="flex-row-start-start gap-2"
+            >
+              {props.tags.map((tag, index) => (
+                <Badge key={index} variant="outline">
+                  {tag}
+                </Badge>
+              ))}
+            </motion.p>
+            <motion.p
+              animate={controlsTopProjectCard}
+              initial={{ y: 50, opacity: 0 }}
+              transition={{ duration: 0.1 }}
+              className="flex-row-start-start gap-2"
+            >
+              {props.tags.map((tag, index) => (
+                <Badge key={index} variant="outline">
+                  {tag}
+                </Badge>
+              ))}
+            </motion.p>
+          </div>
           <motion.p
             className="text-4xl font-semibold"
             animate={controlsBottomProjectCard}
