@@ -4,7 +4,6 @@ import { Toaster } from "sonner";
 
 import { ThemeProvider } from "@/config/theme-provider";
 import router from "@/router/router";
-
 import "@/style/index.css";
 import "@/style/layouts.css";
 

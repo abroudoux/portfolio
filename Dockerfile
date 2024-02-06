@@ -1,9 +1,9 @@
 FROM node:21
 
-WORKDIR /dist
+WORKDIR /build
 
-COPY /dist /dist
+COPY /build /build
 
-EXPOSE 5173
+EXPOSE 3333
 
 CMD [ "npm", "run", "prod" ]

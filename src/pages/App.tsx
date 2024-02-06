@@ -33,22 +33,20 @@ export default function App() {
   return (
     <>
       <Home />
-      <Projects />
       <About />
+      <Projects />
       <Menu />
       <motion.div
         className={`${
           isProjectCardHovered || isTextHovered ? "cursor-hover" : "cursor"
-        } flex-col-center-center`}
-      >
+        } flex-col-center-center`}>
         {isProjectCardHovered && (
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <ArrowUpRight className="w-8 h-8" />
+            transition={{ duration: 0.3 }}>
+            <ArrowUpRight className="w-8 h-8 transition-all delay-500" />
           </motion.div>
         )}
       </motion.div>

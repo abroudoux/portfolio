@@ -13,8 +13,7 @@ export default function Project() {
         initial="hidden"
         animate="visible"
         exit={{ opacity: 0, transition: { duration: 1 } }}
-        variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-      >
+        variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
         <div className="w-full h-auto flex-row-start-start mb-4 p-8">
           <h1 className="text-6xl">{title}</h1>
         </div>

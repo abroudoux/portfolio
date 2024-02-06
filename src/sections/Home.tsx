@@ -8,15 +8,6 @@ import "@/style/animated-bg.scss";
 
 export default function Home() {
   const { setIsTextHovered } = useStore();
-
-  const handleMouseEnter = () => {
-    setIsTextHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsTextHovered(false);
-  };
-
   return (
     <section className="section flex-col-center-center relative" id="home">
       <motion.div
@@ -27,7 +18,7 @@ export default function Home() {
         variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
       >
         <div className="w-full h-full flex-col-center-center text-center">
-          <h1 className="flex-col-center-center font-normal text-5xl flex-col-center-center tracking-wide">
+          <h1 className="flex-col-center-center gap-2 font-normal text-5xl flex-col-center-center tracking-wide">
             <motion.span variants={itemVariants}>Hey 👋 I am</motion.span>
             <motion.span
               variants={itemVariants}
@@ -37,7 +28,7 @@ export default function Home() {
             </motion.span>
             <motion.span
               variants={itemVariants}
-              className="flex-row-center-center hover:italic transition-all group mb-8"
+              className="flex-row-center-center hover:italic transition-all group mb-10"
             >
               <Asterisk className="w-12 h-12 group-hover:animate-spin" />
               web developer
@@ -45,7 +36,7 @@ export default function Home() {
             </motion.span>
             <motion.span variants={itemVariants} className="inline">
               and{" "}
-              <span className="border-2 border-white rounded-3xl px-3 py-1 transition-all hover:rounded-lg">
+              <span className="border-[2px] border-white rounded-3xl px-2 py-2 transition-all hover:rounded-lg">
                 creative coder
               </span>
             </motion.span>

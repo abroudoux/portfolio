@@ -1,8 +1,6 @@
 import { FC } from "react";
 
-type MenuLinkProps = {
-  section: string;
-};
+import { MenuLinkProps } from "@/types";
 
 const MenuLink: FC<MenuLinkProps> = (props) => {
   return (
