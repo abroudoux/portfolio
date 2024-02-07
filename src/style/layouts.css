@@ -139,7 +139,7 @@
 }
 
 .flex-col-end {
-  @apply flex flex-col items-start;
+  @apply flex flex-col items-end;
 }
 
 .flex-col-end-start {
