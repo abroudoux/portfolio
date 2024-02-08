@@ -1,4 +1,4 @@
-export type ProjectsDataProps = {
+export type ProjectDataProps = {
   id: number;
   title: string;
   image: string;
@@ -19,4 +19,13 @@ export type ProjectCardProps = {
   link: string;
   image?: string;
   size?: string;
+};
+
+export type ExperienceCardProps = {
+  name: string;
+  date: string;
+  post?: string;
+  description: string;
+  technos: string[];
+  skills?: string[];
 };

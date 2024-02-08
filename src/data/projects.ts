@@ -1,15 +1,15 @@
-import { ProjectsDataProps } from "@/types";
+import { ProjectDataProps } from "@/types/types";
 
-const projectsData: ProjectsDataProps[] = [
+const projectsData: ProjectDataProps[] = [
   {
     id: 0,
-    title: "choosify",
-    image: "@/assets/img/choosify.png",
-    tags: ["personal project", "current"],
-    description: "From a Notion Database, launch randomly an album on Spotify",
-    technos: ["React", "TailwindCSS", "PostgreSQL", "TypeScript", "NodeJs", "NestJs"],
+    title: "spotify-autopush",
+    image: "@/assets/img/spotify-autopush.png",
+    tags: ["personal project", "finished"],
+    description: "Display on your Github profile the last album you listened on Spotify",
+    technos: ["Python", "Spotify API", "Github API"],
     date: "2024",
-    repository: "https://github.com/abroudoux/chooseify"
+    repository: "https://github.com/abroudoux/spotify-autopush"
   },
   {
     id: 1,
@@ -23,13 +23,13 @@ const projectsData: ProjectsDataProps[] = [
   },
   {
     id: 2,
-    title: "spotify-autopush",
-    image: "@/assets/img/spotify-autopush.png",
-    tags: ["personal project", "finished"],
-    description: "Display on your Github profile the last album you listened on Spotify",
-    technos: ["Python", "Spotify API", "Github API"],
+    title: "choosify",
+    image: "@/assets/img/choosify.png",
+    tags: ["personal project", "current"],
+    description: "From a Notion Database, launch randomly an album on Spotify",
+    technos: ["React", "TailwindCSS", "PostgreSQL", "TypeScript", "NodeJs", "NestJs"],
     date: "2024",
-    repository: "https://github.com/abroudoux/spotify-autopush"
+    repository: "https://github.com/abroudoux/chooseify"
   }
 ];
 

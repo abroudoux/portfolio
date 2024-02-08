@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-import { ProjectCardProps } from "@/types";
+import { ProjectCardProps } from "@/types/types";
 import useStore from "@/lib/store";
 import { Badge } from "@/components/ui/badge";
 

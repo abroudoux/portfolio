@@ -33,16 +33,14 @@ export default function Projects() {
           <motion.div className="w-3/4 h-full" variants={itemVariants}>
             <ProjectCard
               title={projectsData[0].title}
-              // link={`/projects/${projectsData[0].title}`}
               link={projectsData[0].repository}
               tags={projectsData[0].tags}
-              image={Choosify}
+              image={SpotifyAutopush}
             />
           </motion.div>
           <motion.div className="w-1/4 h-full" variants={itemVariants}>
             <ProjectCard
               title={projectsData[1].title}
-              // link={`/projects/${projectsData[1].title}`}
               link={projectsData[1].repository}
               tags={projectsData[1].tags}
               image={UnChatLa}
@@ -62,10 +60,9 @@ export default function Projects() {
           <motion.div className="w-3/4 h-full" variants={itemVariants}>
             <ProjectCard
               title={projectsData[2].title}
-              // link={`/projects/${projectsData[2].title}`}
               link={projectsData[2].repository}
               tags={projectsData[2].tags}
-              image={SpotifyAutopush}
+              image={Choosify}
             />
           </motion.div>
         </div>
