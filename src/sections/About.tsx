@@ -14,7 +14,7 @@ import python from "@/assets/logos/python.svg";
 import postman from "@/assets/logos/postman.svg";
 import docker from "@/assets/logos/docker.svg";
 import postgresql from "@/assets/logos/postgresql.svg";
-import symfony from "@/assets/logos/symfony.svg";
+import laravel from "@/assets/logos/laravel.svg";
 
 export default function About() {
   return (
@@ -41,7 +41,7 @@ export default function About() {
               <img src={postman} className="w-16 h-16 bg-white/5 p-3 rounded-lg" alt="" />
               <img src={docker} className="w-16 h-16 bg-white/5 p-3 rounded-lg" alt="" />
               <img src={postgresql} className="w-16 h-16 bg-white/5 p-3 rounded-lg" alt="" />
-              <img src={symfony} className="w-16 h-16 bg-white/5 p-3 rounded-lg" alt="" />
+              <img src={laravel} className="w-16 h-16 bg-white/5 p-3 rounded-lg" alt="" />
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function About() {
             ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem30
             ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            technos={["Symfony", "VueJs", "SCSS", "PHP"]}
+            technos={["Symfony", "JavaSript", "SCSS"]}
           />
           <ExperienceCard
             post="Internship web developper"
