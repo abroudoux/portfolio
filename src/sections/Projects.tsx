@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import projectsData from "@/data/projects";
 import { itemVariants } from "@/lib/animations";
 import ProjectCard from "@/components/Projects/ProjectCard";
-import Choosify from "@/assets/img/choosify.png";
+import HostelsManagementApp from "@/assets/img/hostels-management-app.png";
 import UnChatLa from "@/assets/img/un-chat-la.png";
 import GithubLogo from "@/assets/img/logo-github.png";
 import SpotifyAutopush from "@/assets/img/spotify-autopush.png";
@@ -62,7 +62,7 @@ export default function Projects() {
               title={projectsData[2].title}
               link={projectsData[2].repository}
               tags={projectsData[2].tags}
-              image={Choosify}
+              image={HostelsManagementApp}
             />
           </motion.div>
         </div>

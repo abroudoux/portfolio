@@ -23,13 +23,13 @@ const projectsData: ProjectDataProps[] = [
   },
   {
     id: 2,
-    title: "choosify",
+    title: "hostels-management-app",
     image: "@/assets/img/choosify.png",
     tags: ["personal project", "current"],
-    description: "From a Notion Database, launch randomly an album on Spotify",
-    technos: ["React", "TailwindCSS", "PostgreSQL", "TypeScript", "NodeJs", "NestJs"],
+    description: "Learn Laravel by making an hostel management app",
+    technos: ["Laravel", "PHP", "PostgreSQL", "TailwindCSS"],
     date: "2024",
-    repository: "https://github.com/abroudoux/chooseify"
+    repository: "https://github.com/abroudoux/hostels-management-app"
   }
 ];
 
