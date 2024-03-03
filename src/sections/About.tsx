@@ -107,24 +107,14 @@ export default function About() {
             post="Internship web developper"
             name="Coquille Consulting"
             date="2023 - now"
-            description="Lorem30
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem30
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem30
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="As a web developer intern, I am in charge of the development of the company's websites. I'm in charge of the creation of the different themes and the development of the back-end part of the websites. I also work on the company's internal tools."
             technos={["Symfony", "JavaSript", "SCSS"]}
           />
           <ExperienceCard
             post="Internship web developper"
             name="Krakn Behavioural"
             date="2023"
-            description="Lorem30
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem30
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem30
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="My role as a web developper intern was to develop the company's website. I was also in charge of the development of a specific website for the company which was used for the company's internal use during meetings and presentations."
             technos={["React", "SCSS", "TypeScript"]}
           />
         </div>

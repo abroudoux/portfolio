@@ -11,25 +11,22 @@ export default function Home() {
   return (
     <section className="section flex-col-center-center relative" id="home">
       <motion.div
-        className="w-full h-full rounded-xl flex-col-center-center backdrop-blur-sm border-2 z-10"
+        className="w-full h-full sm:rounded-none lg:rounded-xl flex-col-center-center backdrop-blur-sm border-2 z-10"
         initial="hidden"
         animate="visible"
         exit={{ opacity: 0, transition: { duration: 1 } }}
-        variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-      >
+        variants={{ visible: { transition: { staggerChildren: 0.3 } } }}>
         <div className="w-full h-full flex-col-center-center text-center">
-          <h1 className="flex-col-center-center gap-2 font-normal text-5xl flex-col-center-center tracking-wide">
+          <h1 className="flex-col-center-center sm:gap-0 lg:gap-2 font-normal text-3xl lg:text-5xl flex-col-center-center tracking-wide">
             <motion.span variants={itemVariants}>Hey 👋 I am</motion.span>
             <motion.span
               variants={itemVariants}
-              className="text-9xl font-semibold my-12"
-            >
+              className="lg:text-9xl sm:text-5xl font-semibold my-6 lg:my-12">
               arthur
             </motion.span>
             <motion.span
               variants={itemVariants}
-              className="flex-row-center-center hover:italic transition-all group mb-10"
-            >
+              className="flex-row-center-center hover:italic transition-all group mb-10">
               <Asterisk className="w-12 h-12 group-hover:animate-spin" />
               web developer
               <Asterisk className="w-12 h-12 group-hover:animate-spin" />
