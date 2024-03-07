@@ -5,7 +5,7 @@ const projectsData: ProjectDataProps[] = [
     id: 0,
     title: "spotify-autopush",
     image: "@/assets/img/spotify-autopush.png",
-    tags: ["personal project", "finished"],
+    tags: ["personal project", "current"],
     description: "Display on your Github profile the last album you listened on Spotify",
     technos: ["Python", "Spotify API", "Github API"],
     date: "2024",
@@ -25,9 +25,9 @@ const projectsData: ProjectDataProps[] = [
     id: 2,
     title: "hostels-management-app",
     image: "@/assets/img/choosify.png",
-    tags: ["personal project", "current"],
+    tags: ["school project", "current"],
     description: "Learn Laravel by making an hostel management app",
-    technos: ["Laravel", "PHP", "PostgreSQL", "TailwindCSS"],
+    technos: ["Laravel", "PHP", "MySQL"],
     date: "2024",
     repository: "https://github.com/abroudoux/hostels-management-app"
   }
