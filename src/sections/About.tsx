@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, CircleUser, icons } from "lucide-react";
+import { CircleUser } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -12,7 +12,7 @@ import react from "@/assets/logos/react.svg";
 import tailwind from "@/assets/logos/tailwind.svg";
 import nestjs from "@/assets/logos/nestjs.svg";
 import git from "@/assets/logos/git.svg";
-import bash from "@/assets/logos/bash.svg";
+import adonis from "@/assets/logos/adonis.svg";
 import nodejs from "@/assets/logos/nodejs.svg";
 import mongodb from "@/assets/logos/mongodb.svg";
 import rust from "@/assets/logos/rust.svg";
@@ -21,7 +21,10 @@ import postman from "@/assets/logos/postman.svg";
 import docker from "@/assets/logos/docker.svg";
 import postgresql from "@/assets/logos/postgresql.svg";
 import laravel from "@/assets/logos/laravel.svg";
-import cv from "@/assets/CV.pdf";
+import linkedin from "@/assets/logos/linkedin.svg";
+import github from "@/assets/logos/github.svg";
+import gmail from "@/assets/logos/gmail.svg";
+import cv from "@/assets/cv-arthur-broudoux-2024.pdf";
 
 export default function About() {
   const scrollRef = useRef(null);
@@ -44,10 +47,9 @@ export default function About() {
           </div>
           <div className="flex-col-start-start w-ful h-auto mb-12 text-xl">
             <motion.p className="pr-6" variants={itemVariants}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolore? Aut eaque
-              accusamus autem blanditiis culpa quidem sed odio alias? Labore quae nulla totam
-              necessitatibus recusandae placeat molestiae sit magni iste illo, id saepe tenetur
-              explicabo sint reiciendis nemo tempora!
+              I'm a studant in web development at Epitech in Rennes. I'm passionate about web
+              development and I'm always looking for new challenges. I'm currently looking for an
+              internship in web development.
             </motion.p>
           </div>
           <div className="w-full h-auto mt-4 mb-20">
@@ -68,7 +70,7 @@ export default function About() {
                   href="https://github.com/abroudoux"
                   className="flex flex-row items-center gap-2"
                   target="_blank">
-                  <Github />
+                  <img src={github} alt="logo-github" className="w-6 h-6" />
                   abroudoux
                 </a>
               </motion.li>
@@ -77,7 +79,7 @@ export default function About() {
                   href="https://linkedin.com/in/abroudoux"
                   className="flex flex-row items-center gap-2"
                   target="_blank">
-                  <Linkedin />
+                  <img src={linkedin} alt="logo-linkedin" className="w-6 h-6" />
                   abroudoux
                 </a>
               </motion.li>
@@ -86,7 +88,7 @@ export default function About() {
                   href="mailto:arthur.broudoux@gmail.com"
                   className="flex flex-row items-center gap-2"
                   target="_blank">
-                  <Mail />
+                  <img src={gmail} alt="logo-gmail" className="w-6 h-6" />
                   arthur.broudoux@gmail.com
                 </a>
               </motion.li>
@@ -152,9 +154,9 @@ export default function About() {
               />
               <motion.img
                 variants={iconsVariants}
-                src={bash}
+                src={adonis}
                 className="w-16 h-16 bg-white/5 p-3 rounded-lg"
-                alt="logo-bash"
+                alt="logo-adonis"
               />
               <motion.img
                 variants={iconsVariants}
@@ -235,7 +237,7 @@ export default function About() {
               post="B2 - Web Developper"
               name="My Digital School Angers - Web and Multimedia cycle"
               date="2022 - now"
-              description="I am currently in my second year of the web and multimedia cycle at My Digital School in Angers. I am learning the different web development languages and tools such as HTML, CSS, JavaScript, PHP and also the use of different tools like Figma, Photoshop or Illustrator."
+              description="I am currently in my second year of the web and multimedia cycle at My Digital School in Angers. I'm learning different web development languages such as HTML, CSS, JavaScript, PHP and also the use of different tools like Figma, Photoshop or Illustrator."
               technos={["Web Development", "UI/UX", "Webdesign", "Graphic Design"]}
             />
             <ExperienceCard
