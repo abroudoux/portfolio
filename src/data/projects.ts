@@ -3,33 +3,33 @@ import { ProjectDataProps } from "@/types/types";
 const projectsData: ProjectDataProps[] = [
   {
     id: 0,
-    title: "spotify-autopush",
+    title: "highlights.io",
     image: "@/assets/img/spotify-autopush.png",
     tags: ["personal project", "current"],
+    description: "Remember your discoveries of the past year at one place",
+    technos: ["AdonisJs", "TypeScript", "React", "TailwindCSS", "PostgreSQL"],
+    date: "2024",
+    repository: "https://github.com/abroudoux/highlights.io"
+  },
+  {
+    id: 1,
+    title: "notion-to-spotify",
+    image: "@/assets/img/notion-to-spotify.png",
+    tags: ["personal project", "v1 finished"],
+    description: "From a Notion list, launch randomly an album on Spotify",
+    technos: ["Notion API", "JavaScript"],
+    date: "2024",
+    repository: "https://github.com/abroudoux/notion-to-spotify-cli.git"
+  },
+  {
+    id: 2,
+    title: "spotify-autopush",
+    image: "@/assets/img/spotify-autopush.png",
+    tags: ["personal project", "v1 finished"],
     description: "Display on your Github profile the last album you listened on Spotify",
     technos: ["Python", "Spotify API", "Github API"],
     date: "2024",
     repository: "https://github.com/abroudoux/spotify-autopush"
-  },
-  {
-    id: 1,
-    title: "un-chat-là",
-    image: "@/assets/img/un-chat-la.png",
-    tags: ["personal project", "finished"],
-    description: "User interface to manage cats",
-    technos: ["React", "TailwindCSS", "MongoDB", "TypeScript", "NestJs"],
-    date: "2024",
-    repository: "https://github.com/abroudoux/cats-monorepo"
-  },
-  {
-    id: 2,
-    title: "hostels-management-app",
-    image: "@/assets/img/choosify.png",
-    tags: ["school project", "current"],
-    description: "Learn Laravel by making an hostel management app",
-    technos: ["Laravel", "PHP", "MySQL"],
-    date: "2024",
-    repository: "https://github.com/abroudoux/hostels-management-app"
   }
 ];
 

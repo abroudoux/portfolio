@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import projectsData from "@/data/projects";
 import { itemVariants } from "@/lib/animations";
 import ProjectCard from "@/components/Projects/ProjectCard";
-import HostelsManagementApp from "@/assets/img/hostels-management-app.png";
-import UnChatLa from "@/assets/img/un-chat-la.png";
+import NotionToSpotify from "@/assets/img/notion-to-spotify.png";
 import GithubLogo from "@/assets/img/logo-github.png";
-import SpotifyAutopush from "@/assets/img/spotify-autopush.png";
+import SpotifyAutopush2 from "@/assets/img/spotify-autopush-2.png";
+import Highlights from "@/assets/img/highlights.io.png";
 
 export default function Projects() {
   const scrollRef = useRef(null);
@@ -35,7 +35,7 @@ export default function Projects() {
               title={projectsData[0].title}
               link={projectsData[0].repository}
               tags={projectsData[0].tags}
-              image={SpotifyAutopush}
+              image={Highlights}
             />
           </motion.div>
           <motion.div className="w-1/4 h-full" variants={itemVariants}>
@@ -43,14 +43,14 @@ export default function Projects() {
               title={projectsData[1].title}
               link={projectsData[1].repository}
               tags={projectsData[1].tags}
-              image={UnChatLa}
+              image={NotionToSpotify}
             />
           </motion.div>
         </div>
         <div className="w-full h-2/4 py-1 flex-row-center-between gap-4">
           <motion.div className="w-1/4 h-full" variants={itemVariants}>
             <ProjectCard
-              title="Wanna see more ?"
+              title="Check my github to see more projects"
               link="https://github.com/abroudoux"
               tags={["social"]}
               image={GithubLogo}
@@ -62,7 +62,7 @@ export default function Projects() {
               title={projectsData[2].title}
               link={projectsData[2].repository}
               tags={projectsData[2].tags}
-              image={HostelsManagementApp}
+              image={SpotifyAutopush2}
             />
           </motion.div>
         </div>
