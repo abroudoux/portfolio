@@ -47,7 +47,7 @@ export default function About() {
           </div>
           <div className="flex-col-start-start w-ful h-auto mb-12 text-xl">
             <motion.p className="pr-6" variants={itemVariants}>
-              I'm a studant in web development at Epitech in Rennes. I'm passionate about web
+              I'm a student in web development at Epitech in Rennes. I'm passionate about web
               development and I'm always looking for new challenges. I'm currently looking for an
               internship in web development.
             </motion.p>

@@ -1,17 +1,22 @@
-import { useEffect } from "react";
-import { ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
-import useStore from "@/lib/store";
-
-import Home from "@/sections/Home";
-import Projects from "@/sections/Projects";
-import About from "@/sections/About";
-
-import Menu from "@/components/Menu/Menu";
+import DesktopPortfolio from "@/PortfolioSize/DesktopPortfolio";
+import MobilePortfolio from "@/PortfolioSize/MobilePortfolio";
 
 export default function App() {
-  const { isProjectCardHovered, isTextHovered } = useStore();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const cursor: HTMLSpanElement | null = document.querySelector(".cursor");
@@ -30,26 +35,5 @@ export default function App() {
     };
   }, []);
 
-  return (
-    <>
-      <Home />
-      <About />
-      <Projects />
-      <Menu />
-      <motion.div
-        className={`${
-          isProjectCardHovered || isTextHovered ? "cursor-hover" : "cursor"
-        } flex-col-center-center`}>
-        {isProjectCardHovered && (
-          <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}>
-            <ArrowUpRight className="w-8 h-8 transition-all delay-500" />
-          </motion.div>
-        )}
-      </motion.div>
-    </>
-  );
+  return <>{isMobile ? <MobilePortfolio /> : <DesktopPortfolio />}</>;
 }

@@ -8,13 +8,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <PageNotFound />,
+    errorElement: <PageNotFound />
   },
   {
     path: "project/:id",
     element: <Project />,
-    errorElement: <PageNotFound />,
-  },
+    errorElement: <PageNotFound />
+  }
 ]);
 
 export default router;

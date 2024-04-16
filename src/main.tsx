@@ -7,9 +7,7 @@ import router from "@/router/router";
 import "@/style/index.css";
 import "@/style/layouts.css";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-).render(
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
     <RouterProvider router={router} />
     <Toaster richColors />
