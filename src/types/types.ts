@@ -29,3 +29,8 @@ export type ExperienceCardProps = {
   technos: string[];
   skills?: string[];
 };
+
+export type SectionsCompProps = {
+  title: string;
+  content: JSX.Element;
+};
