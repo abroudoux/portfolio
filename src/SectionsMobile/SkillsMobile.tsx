@@ -12,7 +12,7 @@ export default function SkillsMobile() {
       <li className="flex flex-col gap-2">
         <h3 className="text-xs underline font-semibold">backend & databases</h3>
         <p className="text-white/70 font-normal text-xs">
-          NodeJs (Adonis, Nest, Express), PHP (Laravel), Python, Go, Rust, PostgreSQL, MongoDB
+          NodeJs (Adonis / Nest), Python, Go, PostgreSQL, MongoDB
         </p>
       </li>
       <li className="flex flex-col gap-2">
