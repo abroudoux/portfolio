@@ -2,6 +2,7 @@ import HeaderMobile from "@/components/Mobile/HeaderMobile";
 import AboutMobile from "@/components/Mobile/AboutMobile";
 import ProjectsMobile from "@/components/Mobile/ProjectsMobile";
 import ExperiencesMobile from "@/components/Mobile/ExperiencesMobile";
+import SkillsMobile from "@/components/Mobile/SkillsMobile";
 
 export default function MobilePortfolio() {
   return (
@@ -10,6 +11,7 @@ export default function MobilePortfolio() {
       <AboutMobile />
       <ProjectsMobile />
       <ExperiencesMobile />
+      <SkillsMobile />
     </div>
   );
 }
