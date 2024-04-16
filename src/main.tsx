@@ -3,7 +3,7 @@ import { RouterProvider } from "react-router-dom";
 import { Toaster } from "sonner";
 
 import { ThemeProvider } from "@/config/theme-provider";
-import router from "@/router/router";
+import router from "@/config/router";
 import "@/style/index.css";
 import "@/style/layouts.css";
 

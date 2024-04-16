@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 
 import useStore from "@/lib/store";
 
-import Home from "@/sections/Home";
-import Projects from "@/sections/Projects";
-import About from "@/sections/About";
+import Home from "@/SectionsDesktop/Home";
+import Projects from "@/SectionsDesktop/Projects";
+import About from "@/SectionsDesktop/About";
 
 import Menu from "@/components/Menu/Menu";
 

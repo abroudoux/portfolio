@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 import { itemVariants, iconsVariants } from "@/lib/animations";
 
-import ExperienceCard from "@/components/Jobs/ExperienceCard";
+import ExperienceCard from "@/components/Experiences/ExperienceCard";
 import javascript from "@/assets/logos/javascript.svg";
 import typescript from "@/assets/logos/typescript.svg";
 import scss from "@/assets/logos/scss.svg";
