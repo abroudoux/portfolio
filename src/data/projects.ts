@@ -6,8 +6,8 @@ const projectsData: ProjectDataProps[] = [
     title: "highlights.io",
     image: "@/assets/img/spotify-autopush.png",
     tags: ["personal project", "current"],
-    description: "Remember your discoveries of the past year at one place",
-    technos: ["AdonisJs", "TypeScript", "React", "TailwindCSS", "PostgreSQL"],
+    description: "Keep your discoveries of the past year at one place",
+    technos: ["AdonisJs", "TypeScript", "React", "TailwindCSS"],
     date: "2024",
     repository: "https://github.com/abroudoux/highlights.io"
   },

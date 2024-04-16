@@ -1,4 +1,4 @@
-import SectionsComp from "@/components/Mobile/SectionsComp";
+import SectionsComp from "@/components/Mobile/SectionsMobileComp";
 
 export default function AboutMobile() {
   const content = (

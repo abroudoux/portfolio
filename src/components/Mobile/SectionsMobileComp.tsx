@@ -1,0 +1,14 @@
+import { FC } from "react";
+
+import { SectionMobileCompProps } from "@/types/types";
+
+const SectionMobileComp: FC<SectionMobileCompProps> = (props) => {
+  return (
+    <section className="w-100 p-4 flex flex-col items-start my-5">
+      <h2 className="text-md font-semibold mb-4 italic font-platypi">{props.title}</h2>
+      {props.content}
+    </section>
+  );
+};
+
+export default SectionMobileComp;

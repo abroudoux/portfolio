@@ -1,4 +1,4 @@
-import SectionsComp from "@/components/Mobile/SectionsComp";
+import SectionsComp from "@/components/Mobile/SectionsMobileComp";
 
 export default function SkillsMobile() {
   const content = (
@@ -6,13 +6,13 @@ export default function SkillsMobile() {
       <li className="flex flex-col gap-2">
         <h3 className="text-xs underline font-semibold">fontend</h3>
         <p className="text-white/70 font-normal text-xs">
-          JavaScript, TypScript, React, TailwindCSS, SCSS, VueJs
+          JavaScript, TypScript, React, TailwindCSS, SCSS
         </p>
       </li>
       <li className="flex flex-col gap-2">
         <h3 className="text-xs underline font-semibold">backend & databases</h3>
         <p className="text-white/70 font-normal text-xs">
-          NodeJs (Adonis, Nest), php (Laravel, Symfony), Python, Go, Rust, PostgreSQL, MongoDB
+          NodeJs (Adonis, Nest, Express), PHP (Laravel), Python, Go, Rust, PostgreSQL, MongoDB
         </p>
       </li>
       <li className="flex flex-col gap-2">

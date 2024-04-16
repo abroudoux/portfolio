@@ -30,7 +30,7 @@ export type ExperienceCardProps = {
   skills?: string[];
 };
 
-export type SectionsCompProps = {
+export type SectionMobileCompProps = {
   title: string;
   content: JSX.Element;
 };

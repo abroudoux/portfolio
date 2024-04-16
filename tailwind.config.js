@@ -14,6 +14,10 @@ export const theme = {
       "2xl": "1400px"
     }
   },
+  fontFamily: {
+    sans: ["Inter", "sans-serif"],
+    platypi: ["Platypi", "serif"]
+  },
   extend: {
     colors: {
       border: "hsl(var(--border))",
