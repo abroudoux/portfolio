@@ -6,11 +6,9 @@ export type SectionCompProps = {
 export type ProjectDataProps = {
   id: number;
   title: string;
-  image: string;
-  tags: string[];
+  status: string;
   description: string;
   technos: string[];
-  date: string;
   repository: string;
 };
 

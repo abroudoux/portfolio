@@ -9,9 +9,14 @@ export default function Projects() {
     <ul className="flex flex-col gap-5">
       {projectsData.map((project) => (
         <li key={project.id} className="flex flex-col gap-2">
-          <a href={project.repository} target="_blank" className="text-xs underline font-semibold">
-            {project.title}
-          </a>
+          <h3 className="text-xs inline">
+            <a href={project.repository} target="_blank" className="underline font-semibold">
+              {project.title}
+            </a>{" "}
+            <span>
+              <Badge variant={"secondary"}>{project.status}</Badge>
+            </span>
+          </h3>
           <p className="text-[12px] font-normal text-white/70">{project.description}</p>
           <ul className="flex flex-row items-center gap-1">
             {project.technos.map((techno) => (

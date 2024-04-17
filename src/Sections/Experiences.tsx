@@ -8,9 +8,9 @@ export default function Experiences() {
     <ul className="flex flex-col gap-4">
       {experiencesData.map((experience) => (
         <li key={experience.id} className="flex flex-col gap-2">
-          <h3 className="text-xs underline font-semibold">
+          <a className="text-xs underline font-semibold" href={experience.siteUrl} target="_blank">
             {experience.name} - {experience.company}
-          </h3>
+          </a>
           <span className="text-white/40 text-[10px] font-light">{experience.date}</span>
           <p className="text-white/70 font-normal text-xs">{experience.description}</p>
           <ul className="flex flex-row items-center gap-1">
