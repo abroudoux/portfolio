@@ -1,6 +1,6 @@
 import experiencesData from "@/data/experiencesData";
 
-import SectionsComp from "@/components/Mobile/SectionsComp";
+import SectionsComp from "@/components/Sections/SectionsComp";
 import { Badge } from "@/components/ui/badge";
 
 export default function Experiences() {

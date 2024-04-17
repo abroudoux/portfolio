@@ -1,6 +1,6 @@
 import skillsData from "@/data/skillsData";
 
-import SectionsComp from "@/components/Mobile/SectionsComp";
+import SectionsComp from "@/components/Sections/SectionsComp";
 
 export default function Skills() {
   const content = (

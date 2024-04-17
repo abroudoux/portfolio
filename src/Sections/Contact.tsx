@@ -1,4 +1,4 @@
-import SectionMobileComp from "@/components/Mobile/SectionsComp";
+import SectionMobileComp from "@/components/Sections/SectionsComp";
 
 import cv from "@/assets/cv-arthur-broudoux-2024.pdf";
 

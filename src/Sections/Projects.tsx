@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 import projectsData from "@/data/projectsData";
 
-import SectionsComp from "@/components/Mobile/SectionsComp";
+import SectionsComp from "@/components/Sections/SectionsComp";
 
 export default function Projects() {
   const content = (
