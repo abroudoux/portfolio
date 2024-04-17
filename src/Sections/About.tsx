@@ -1,6 +1,6 @@
-import SectionsComp from "@/components/Mobile/SectionsMobileComp";
+import SectionsComp from "@/components/Mobile/SectionsComp";
 
-export default function AboutMobile() {
+export default function About() {
   const content = (
     <>
       <p className="text-xs font-normal mb-3">
@@ -10,9 +10,8 @@ export default function AboutMobile() {
         technologies by contributing to public projets.
       </p>
       <p className="text-xs font-normal">
-        I'm looking for an Internship in web development from January 2024 near to Rennes (3 days to
-        school and 2 days at company). I'm conviced that I can bring a lot to a new company and I'm
-        motivated to face new challenges.
+        I'm looking for an Internship in web development from January 2024 near to Rennes. I'm
+        conviced that I can bring a lot to a new company and I'm motivated to face new challenges.
       </p>
     </>
   );

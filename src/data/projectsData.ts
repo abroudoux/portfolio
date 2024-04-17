@@ -1,4 +1,4 @@
-import { ProjectDataProps } from "@/types/types";
+import { ProjectDataProps } from "@/utils/types";
 
 const projectsData: ProjectDataProps[] = [
   {
@@ -9,7 +9,7 @@ const projectsData: ProjectDataProps[] = [
     description: "Keep your discoveries of the past year at one place",
     technos: ["AdonisJs", "TypeScript", "React", "TailwindCSS"],
     date: "2024",
-    repository: "https://github.com/abroudoux/highlights.io"
+    repository: "https://github.com/abroudoux/highlights.io.git"
   },
   {
     id: 1,
@@ -29,7 +29,17 @@ const projectsData: ProjectDataProps[] = [
     description: "Display on your Github profile the last album you listened on Spotify",
     technos: ["Python", "Spotify API", "Github API"],
     date: "2024",
-    repository: "https://github.com/abroudoux/spotify-autopush"
+    repository: "https://github.com/abroudoux/spotify-autopush.git"
+  },
+  {
+    id: 3,
+    title: "tailwindcss-breakpoints-indicators",
+    image: "",
+    tags: ["personal project", "v1 finished"],
+    description: "NPM package to display TailwindCSS breakpoints in your project",
+    technos: ["JavaScript", "NPM Package"],
+    date: "2024",
+    repository: "https://github.com/abroudoux/tailwindcss-breakpoints-indicators.git"
   }
 ];
 

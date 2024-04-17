@@ -1,15 +1,17 @@
 import { Badge } from "@/components/ui/badge";
 
-import projectsData from "@/data/projects";
+import projectsData from "@/data/projectsData";
 
-import SectionsComp from "@/components/Mobile/SectionsMobileComp";
+import SectionsComp from "@/components/Mobile/SectionsComp";
 
-export default function ProjectsMobile() {
+export default function Projects() {
   const content = (
     <ul className="flex flex-col gap-5">
       {projectsData.map((project) => (
         <li key={project.id} className="flex flex-col gap-2">
-          <h3 className="text-xs underline font-semibold">{project.title}</h3>
+          <a href={project.repository} target="_blank" className="text-xs underline font-semibold">
+            {project.title}
+          </a>
           <p className="text-[12px] font-normal text-white/70">{project.description}</p>
           <ul className="flex flex-row items-center gap-1">
             {project.technos.map((techno) => (

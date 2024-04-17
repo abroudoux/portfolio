@@ -67,14 +67,9 @@
 }
 
 @layer base {
-  * {
-    @apply border-border cursor-none;
-  }
   body,
   html {
     @apply bg-background text-foreground;
-    /* scroll-snap-type: y mandatory; */
-    /* block-size: 100%; */
   }
 }
 
@@ -86,28 +81,4 @@
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-.section {
-  @apply w-screen h-screen lg:px-6 lg:py-6;
-}
-
-/* section {
-  scroll-snap-stop: always;
-  scroll-snap-align: start;
-  block-size: 100%;
-} */
-
-.active {
-  @apply bg-white text-background border-white rounded-3xl;
-}
-
-.cursor {
-  @apply fixed w-4 h-4 bg-white rounded-full pointer-events-none mix-blend-difference z-50;
-  transform: translate (-50%, -50%);
-}
-
-.cursor-hover {
-  @apply fixed w-28 h-28 bg-transparent border-2 border-white rounded-full pointer-events-none mix-blend-difference z-50;
-  transform: translate (-50%, -50%);
 }

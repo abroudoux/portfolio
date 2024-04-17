@@ -1,39 +1,19 @@
-import { useEffect, useState } from "react";
-
-import DesktopPortfolio from "@/PortfolioSize/DesktopPortfolio";
-import MobilePortfolio from "@/PortfolioSize/MobilePortfolio";
+import Header from "@/Sections/Header";
+import About from "@/Sections/About";
+import Projects from "@/Sections/Projects";
+import Experiences from "@/Sections/Experiences";
+import Skills from "@/Sections/Skils";
+import Contact from "@/Sections/Contact";
 
 export default function App() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1280);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    const cursor: HTMLSpanElement | null = document.querySelector(".cursor");
-
-    function handleCursor(e: MouseEvent) {
-      if (cursor) {
-        cursor.style.left = `${e.x}px`;
-        cursor.style.top = `${e.y}px`;
-      }
-    }
-
-    window.addEventListener("mousemove", (e) => handleCursor(e));
-
-    return () => {
-      window.removeEventListener("mousemove", (e) => handleCursor(e));
-    };
-  }, []);
-
-  return <>{isMobile ? <MobilePortfolio /> : <DesktopPortfolio />}</>;
+  return (
+    <div className="w-full max-w-3xl p-2">
+      <Header />
+      <About />
+      <Projects />
+      <Experiences />
+      <Skills />
+      <Contact />
+    </div>
+  );
 }
