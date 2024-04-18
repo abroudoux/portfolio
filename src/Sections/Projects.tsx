@@ -17,7 +17,7 @@ export default function Projects() {
               <Badge variant={"secondary"}>{project.status}</Badge>
             </span>
           </h3>
-          <p className="text-[12px] font-normal text-white/70">{project.description}</p>
+          <p className="text-[12px] font-normal text-muted-foreground">{project.description}</p>
           <ul className="flex flex-row items-center gap-1">
             {project.technos.map((techno) => (
               <Badge key={techno}>{techno}</Badge>

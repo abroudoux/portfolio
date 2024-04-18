@@ -8,7 +8,7 @@ export default function Skills() {
       {skillsData.map((skill) => (
         <li key={skill.id} className="flex flex-col gap-2">
           <h3 className="text-xs underline font-semibold">{skill.name}</h3>
-          <p className="text-white/70 font-normal text-xs">{skill.technos.join(", ")}</p>
+          <p className="text-muted-foreground font-normal text-xs">{skill.technos.join(", ")}</p>
         </li>
       ))}
     </ul>

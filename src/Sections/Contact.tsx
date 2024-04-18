@@ -4,20 +4,20 @@ import cv from "@/assets/cv-arthur-broudoux-2024.pdf";
 
 export default function Contact() {
   const content = (
-    <p className="text-xs font-normal mb-3 text-white/70">
+    <p className="text-xs font-normal mb-3 text-muted-foreground">
       Let's work together ! You can contact me{" "}
-      <a href="mailto:arthur.broudoux@gmail.com" className="text-white font-semibold">
+      <a href="mailto:arthur.broudoux@gmail.com" className="text-primary font-semibold">
         by mail
       </a>{" "}
       or via{" "}
       <a
         href="https://www.linkedin.com/in/abroudoux/"
         target="_blank"
-        className="text-white font-semibold">
+        className="text-primary font-semibold">
         Linkedin
       </a>
       . You can also check my{" "}
-      <a href={cv} className="text-white font-semibold" target="_blank">
+      <a href={cv} className="text-primary font-semibold" target="_blank">
         CV
       </a>
       .
