@@ -8,13 +8,11 @@ export default function Experiences() {
     <ul className="flex flex-col gap-4">
       {experiencesData.map((experience) => (
         <li key={experience.id} className="flex flex-col gap-2">
-          <a className="text-xs underline font-semibold" href={experience.siteUrl} target="_blank">
+          <a className="text-ms underline font-semibold" href={experience.siteUrl} target="_blank">
             {experience.name} - {experience.company}
           </a>
-          <span className="text-secondary-foreground text-[10px] font-light">
-            {experience.date}
-          </span>
-          <p className="text-muted-foreground font-normal text-xs">{experience.description}</p>
+          <span className="text-secondary-foreground text-xs font-light">{experience.date}</span>
+          <p className="text-muted-foreground font-normal text-ms">{experience.description}</p>
           <ul className="flex flex-row items-center gap-1">
             {experience.technos.map((techno) => (
               <Badge key={techno}>{techno}</Badge>
