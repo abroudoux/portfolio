@@ -12,7 +12,7 @@ const projectsData: ProjectDataProps[] = [
   {
     id: 1,
     title: "notion-to-spotify",
-    description: "From a Notion list, launch randomly an album on Spotify",
+    description: "From a Notion list launch randomly an album on Spotify",
     technos: ["JavaScript", "Notion API"],
     repository: "https://github.com/abroudoux/notion-to-spotify-cli.git",
     status: "v1"
@@ -20,7 +20,7 @@ const projectsData: ProjectDataProps[] = [
   {
     id: 2,
     title: "tailwindcss-breakpoints-indicators",
-    description: "NPM package to display TailwindCSS breakpoints in your project",
+    description: "NPM package to display TailwindCSS breakpoints",
     technos: ["JavaScript", "NPM Package"],
     repository: "https://github.com/abroudoux/tailwindcss-breakpoints-indicators.git",
     status: "v1"
@@ -28,7 +28,7 @@ const projectsData: ProjectDataProps[] = [
   {
     id: 3,
     title: "spotify-autopush",
-    description: "Display on your Github profile the last album you listened on Spotify",
+    description: "Display on your Github profile the last album you listened",
     technos: ["Python", "Spotify API", "Github API"],
     repository: "https://github.com/abroudoux/spotify-autopush.git",
     status: "finished"

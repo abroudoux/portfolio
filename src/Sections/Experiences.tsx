@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Experiences() {
   const content = (
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-8">
       {experiencesData.map((experience) => (
-        <li key={experience.id} className="flex flex-col gap-2">
+        <li key={experience.id} className="flex flex-col gap-4">
           <a className="text-ms underline font-semibold" href={experience.siteUrl} target="_blank">
             {experience.name} - {experience.company}
           </a>

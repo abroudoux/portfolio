@@ -4,8 +4,8 @@ import { SectionCompProps } from "@/utils/types";
 
 const SectionComp: FC<SectionCompProps> = (props) => {
   return (
-    <section className="w-100 p-4 flex flex-col items-start my-5">
-      <h2 className="text-lg font-semibold mb-4 italic font-platypi">{props.title}</h2>
+    <section className="w-100 p-4 flex flex-col items-start my-6">
+      <h2 className="text-lg font-semibold mb-6 italic font-platypi">{props.title}</h2>
       {props.content}
     </section>
   );

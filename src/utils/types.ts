@@ -27,3 +27,11 @@ export type SkillDataProps = {
   name: string;
   technos: string[];
 };
+
+export type EducationtDataProps = {
+  id: number;
+  title: string;
+  description: string;
+  establishment: string;
+  date: string;
+};

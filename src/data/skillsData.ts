@@ -4,7 +4,7 @@ const skillsData: SkillDataProps[] = [
   {
     id: 0,
     name: "frontend",
-    technos: ["JavaScript", "TypeScript", "Next (React)", "TailwindCSS", "SCSS", "Nuxt (Vue)"]
+    technos: ["JavaScript", "TypeScript", "React", "TailwindCSS", "SCSS"]
   },
   {
     id: 1,
