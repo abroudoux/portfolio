@@ -16,12 +16,11 @@ export default function Contact() {
         target="_blank"
         className="text-primary font-semibold">
         <HightlightString text="Linkedin" icon="💼" />
-      </a>
+      </a>{" "}
       . You can also check my{" "}
       <a href={cv} className="text-primary font-semibold" target="_blank">
-        <HightlightString text="Curriculum Vitae" icon="📃" />
+        <HightlightString text="Curriculum Vitae." icon="📃" />
       </a>
-      .
     </p>
   );
   return <SectionMobileComp title="contact" content={content} />;

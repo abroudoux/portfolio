@@ -1,10 +1,10 @@
-import Header from "@/sections/Header";
-import About from "@/sections/About";
-import Projects from "@/sections/Projects";
-import Experiences from "@/sections/Experiences";
-import Education from "@/sections/Education";
-import Skills from "@/sections/Skills";
-import Contact from "@/sections/Contact";
+import Header from "../sections/Header";
+import About from "../sections/About";
+import Projects from "../sections/Projects";
+import Experiences from "../sections/Experiences";
+import Education from "../sections/Education";
+import Skills from "../sections/Skills";
+import Contact from "../sections/Contact";
 
 export default function App() {
   return (
