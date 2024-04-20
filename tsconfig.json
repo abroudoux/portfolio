@@ -20,5 +20,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["./src", "test/Home.test.tsx"]
+  "include": ["./src"]
 }
