@@ -7,7 +7,7 @@ export default function Education() {
     <ul className="flex flex-col gap-8">
       {educationData.map((education) => (
         <li key={education.id} className="flex flex-col gap-4">
-          <h3 className="text-lg font-semibold">
+          <h3 className="text-md font-semibold">
             {education.title}{" "}
             <span className="text-muted-foreground font-normal no-underline">
               - {education.establishment}

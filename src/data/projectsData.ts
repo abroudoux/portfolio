@@ -7,7 +7,7 @@ const projectsData: ProjectDataProps[] = [
     description: "Keep your discoveries of the past year at one place",
     technos: ["Adonis", "TypeScript", "React", "TailwindCSS"],
     repository: "https://github.com/abroudoux/highlights.io.git",
-    status: "WIP"
+    status: "wip"
   },
   {
     id: 1,
