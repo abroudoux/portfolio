@@ -16,7 +16,8 @@ export const theme = {
   },
   fontFamily: {
     sans: ["Inter", "sans-serif"],
-    platypi: ["Platypi", "serif"]
+    platypi: ["Platypi", "serif"],
+    space: ["Space Mono", "monospace"]
   },
   extend: {
     colors: {
