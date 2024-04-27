@@ -9,8 +9,8 @@ export default function Header() {
         <h1 className="text-xl font-bold font-platypi">Arthur Broudoux</h1>
         <span className="text-ms font-normal">Web Developper</span>
       </div>
-      <ul className="flex flex-row items-center gap-2 h-full">
-        <li className="p-2 hover:bg-primary-foreground focus:bg-primary-foreground rounded">
+      <ul className="flex flex-row items-center gap-3 h-full">
+        <li className="p-3 hover:bg-primary-foreground focus:bg-primary-foreground rounded">
           <a href="https://github.com/abroudoux" target="_blank">
             <Github size={18} />
           </a>

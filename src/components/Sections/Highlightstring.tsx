@@ -1,6 +1,6 @@
 const HightlightString = ({ text, icon }: { text: string; icon: string }) => {
   return (
-    <span className="text-primary bg-slate-800 p-1 rounded hover:bg-slate-700 transition-colors font-space text-nowrap">
+    <span className="text-primary bg-muted p-1 rounded hover:bg-muted-foreground transition-colors font-space text-nowrap">
       {icon} {text}
     </span>
   );

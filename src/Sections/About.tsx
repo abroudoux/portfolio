@@ -5,9 +5,13 @@ export default function About() {
   const content = (
     <div className="text-ms font-normal mb-3 leading-8">
       <p className="mb-3">
-        I'm a student in web development at <HightlightString icon="📚" text="Epitech" /> in Rennes.
-        I'm passionate about new technologies and programming. I'm also aware of the importance of
-        the <HightlightString icon="👤" text="user experience" /> and the design of an application.
+        I'm a student in web development at{" "}
+        <a href="https://www.epitech.eu/" target="_blank">
+          <HightlightString icon="📚" text="Epitech" />
+        </a>{" "}
+        in Rennes. I'm passionate about new technologies and programming. I'm also aware of the
+        importance of the <HightlightString icon="👤" text="user experience" /> and the design of an
+        application.
       </p>
       <p>
         I'm looking for an Internship in web development from January 2024 near to{" "}
