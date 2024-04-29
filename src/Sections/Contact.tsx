@@ -1,3 +1,7 @@
+import { motion } from "framer-motion";
+
+import { itemsVariants } from "@/lib/animations";
+
 import SectionMobileComp from "@/components/Sections/SectionsComp";
 import HightlightString from "@/components/Sections/Highlightstring";
 
@@ -5,7 +9,9 @@ import cv from "@/assets/cv-arthur-broudoux-2024.pdf";
 
 export default function Contact() {
   const content = (
-    <p className="text-ms font-normal mb-3 text-muted-foreground leading-8">
+    <motion.p
+      className="text-ms font-normal mb-3 text-muted-foreground leading-8"
+      variants={itemsVariants}>
       Let's work together ! You can contact me by{" "}
       <a href="mailto:arthur.broudoux@gmail.com" className="text-primary font-semibold">
         <HightlightString text="mail" icon="📫" />
@@ -21,7 +27,7 @@ export default function Contact() {
       <a href={cv} className="text-primary font-semibold" target="_blank">
         <HightlightString text="Curriculum Vitae." icon="📃" />
       </a>
-    </p>
+    </motion.p>
   );
   return <SectionMobileComp title="contact" content={content} />;
 }

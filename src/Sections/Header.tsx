@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
 import { Github } from "lucide-react";
+
+import { itemsVariants } from "@/lib/animations";
 
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function Header() {
   return (
-    <header className="w-100 h-auto flex flex-row justify-between items-center pt-8 p-4">
+    <motion.header
+      className="w-100 h-auto flex flex-row justify-between items-center pt-8 p-4"
+      variants={itemsVariants}>
       <div className="flex flex-col gap-2">
         <h1 className="text-xl font-bold font-platypi">Arthur Broudoux</h1>
         <span className="text-ms font-normal">Web Developper</span>
@@ -19,6 +24,6 @@ export default function Header() {
           <ModeToggle />
         </li>
       </ul>
-    </header>
+    </motion.header>
   );
 }

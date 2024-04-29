@@ -2,6 +2,7 @@ import { FC } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
+import { itemsVariants } from "@/lib/animations";
 import { ProjectDataProps } from "@/utils/types";
 
 import { Badge } from "@/components/ui/badge";
@@ -20,7 +21,8 @@ const ProjectCard: FC<ProjectDataProps> = (props) => {
           stiffness: 100,
           restDelta: 0.001
         }
-      }}>
+      }}
+      variants={itemsVariants}>
       <a
         href={props.repository}
         target="_blank"

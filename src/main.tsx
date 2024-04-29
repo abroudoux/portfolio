@@ -3,6 +3,7 @@ import { RouterProvider } from "react-router-dom";
 
 import { ThemeProvider } from "@/config/theme-provider";
 import router from "@/config/router";
+
 import "@/style/index.css";
 import "@/style/layouts.css";
 

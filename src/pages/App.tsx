@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Header from "@/Sections/Header";
 import About from "@/Sections/About";
 import Projects from "@/Sections/Projects";
@@ -8,7 +10,7 @@ import Contact from "@/Sections/Contact";
 
 export default function App() {
   return (
-    <div className="w-full max-w-3xl p-2">
+    <motion.main className="w-full max-w-3xl p-2" initial="hidden" animate="visible">
       <Header />
       <About />
       <Projects />
@@ -16,6 +18,6 @@ export default function App() {
       <Education />
       <Skills />
       <Contact />
-    </div>
+    </motion.main>
   );
 }

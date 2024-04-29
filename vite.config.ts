@@ -7,27 +7,27 @@ import path from "path";
 export default defineConfig({
   envPrefix: "VITE_",
   build: {
-    outDir: "build",
+    outDir: "build"
   },
   plugins: [
     react(),
     envCompatible(),
     svgrPlugin({
       svgrOptions: {
-        icon: true,
-      },
-    }),
+        icon: true
+      }
+    })
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+      "@": path.resolve(__dirname, "./src")
+    }
   },
   server: {
     host: true,
     port: 3333,
     watch: {
-      usePolling: true,
-    },
-  },
+      usePolling: true
+    }
+  }
 });

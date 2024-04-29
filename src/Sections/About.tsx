@@ -1,9 +1,13 @@
+import { motion } from "framer-motion";
+
+import { itemsVariants } from "@/lib/animations";
+
 import SectionsComp from "@/components/Sections/SectionsComp";
 import HightlightString from "@/components/Sections/Highlightstring";
 
 export default function About() {
   const content = (
-    <div className="text-ms font-normal mb-3 leading-8">
+    <motion.div className="text-ms font-normal mb-3 leading-8" variants={itemsVariants}>
       <p className="mb-3">
         I'm a student in web development at{" "}
         <a href="https://www.epitech.eu/" target="_blank">
@@ -18,7 +22,7 @@ export default function About() {
         <HightlightString icon="📍" text="Rennes" />. I'm conviced that I can bring a lot to a new
         company and I'm motivated to face new challenges.
       </p>
-    </div>
+    </motion.div>
   );
 
   return <SectionsComp title="about" content={content} />;

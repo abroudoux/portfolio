@@ -1,13 +1,16 @@
+import { motion } from "framer-motion";
+
 import experiencesData from "@/data/experiencesData";
+import { itemsVariants } from "@/lib/animations";
 
 import SectionsComp from "@/components/Sections/SectionsComp";
 import { Badge } from "@/components/ui/badge";
 
 export default function Experiences() {
   const content = (
-    <ul className="flex flex-col gap-8">
+    <motion.ul className="flex flex-col gap-8" variants={itemsVariants}>
       {experiencesData.map((experience) => (
-        <li key={experience.id} className="flex flex-col gap-4">
+        <motion.li key={experience.id} className="flex flex-col gap-4" variants={itemsVariants}>
           <a className="text-ms underline font-semibold" href={experience.siteUrl} target="_blank">
             {experience.name} - {experience.company}
           </a>
@@ -18,9 +21,9 @@ export default function Experiences() {
               <Badge key={techno}>{techno}</Badge>
             ))}
           </ul>
-        </li>
+        </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   );
 
   return <SectionsComp title="experiences" content={content} />;
