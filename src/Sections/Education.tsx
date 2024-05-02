@@ -9,15 +9,13 @@ export default function Education() {
   const content = (
     <motion.ul className="flex flex-col gap-8" variants={itemsVariants}>
       {educationData.map((education) => (
-        <motion.li key={education.id} className="flex flex-col gap-4" variants={itemsVariants}>
-          <h3 className="text-md font-semibold">
+        <motion.li key={education.id} className="flex flex-col gap-2" variants={itemsVariants}>
+          <h3 className="text- normal pb-2">
             {education.title}{" "}
-            <span className="text-muted-foreground font-normal no-underline">
-              - {education.establishment}
-            </span>
+            <span className="text-muted-foreground">- {education.establishment}</span>
           </h3>
-          <span className="text-secondary-foreground text-xs font-light">{education.date}</span>
-          <p className="text-muted-foreground font-normal text-ms">{education.description}</p>
+          <p className="text-muted-foreground font-normal text-xs">{education.description}</p>
+          <span className="text-secondary-foreground text-[8px] font-normal">{education.date}</span>
         </motion.li>
       ))}
     </motion.ul>

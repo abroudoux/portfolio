@@ -31,7 +31,7 @@ const projectsData: ProjectDataProps[] = [
     description: "Display on your Github profile the last album you listened",
     technos: ["Python", "Spotify API", "Github API"],
     repository: "https://github.com/abroudoux/spotify-autopush.git",
-    status: "finished"
+    status: "v1"
   }
 ];
 

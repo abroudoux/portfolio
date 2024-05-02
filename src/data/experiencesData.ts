@@ -8,7 +8,7 @@ const experiencesData: ExperiencesDataProps[] = [
     description:
       "As a web developer intern, I am in charge of the development of the company's websites. I'm in charge of the creation of the different themes and the development of the back-end part of the websites. I also work on the company's internal tools.",
     date: "sep. 2023 - aug. 2024",
-    technos: ["PHP", "JavaScript", "SCSS"],
+    technos: ["Symfony", "JavaScript", "SCSS"],
     siteUrl: "https://coquille.fr/"
   },
   {
@@ -18,7 +18,7 @@ const experiencesData: ExperiencesDataProps[] = [
     description:
       "My role as a web developper intern was to develop the company's website. I was also in charge of the development of a specific website for the company which was used for the company's internal use during meetings and presentations.",
     date: "apr. 2023 - june 2023",
-    technos: ["React", "SCSS", "TypeScript", "Webflow"],
+    technos: ["React", "TypeScript", "SCSS"],
     siteUrl: "https://www.krakn.fr/"
   }
 ];

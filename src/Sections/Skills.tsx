@@ -10,8 +10,8 @@ export default function Skills() {
     <motion.ul className="flex flex-col gap-4" variants={itemsVariants}>
       {skillsData.map((skill) => (
         <motion.li key={skill.id} className="flex flex-col gap-2" variants={itemsVariants}>
-          <h3 className="text-ms underline font-semibold">{skill.name}</h3>
-          <p className="text-muted-foreground font-normal text-ms">{skill.technos.join(", ")}</p>
+          <h3 className="text-sm font-semibold">{skill.name}</h3>
+          <p className="text-muted-foreground font-normal text-xs">{skill.technos.join(", ")}</p>
         </motion.li>
       ))}
     </motion.ul>

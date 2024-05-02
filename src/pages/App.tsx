@@ -14,10 +14,11 @@ export default function App() {
     <motion.main className="w-full max-w-3xl p-2" initial="hidden" animate="visible">
       <Header />
       <About />
+      <Contact />
       <Projects />
       <Experiences />
-      <Education />
       <Skills />
+      <Education />
       <Contact />
       {/* <MusicPlayer /> */}
     </motion.main>

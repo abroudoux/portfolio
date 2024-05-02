@@ -7,7 +7,7 @@ import HightlightString from "@/components/Sections/Highlightstring";
 
 export default function About() {
   const content = (
-    <motion.div className="text-ms font-normal mb-3 leading-8" variants={itemsVariants}>
+    <motion.div className="text-sm leading-8" variants={itemsVariants}>
       <p className="mb-3">
         I'm a student in web development at{" "}
         <a href="https://www.epitech.eu/" target="_blank">
