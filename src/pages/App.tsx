@@ -7,6 +7,7 @@ import Experiences from "@/Sections/Experiences";
 import Education from "@/Sections/Education";
 import Skills from "@/Sections/Skills";
 import Contact from "@/Sections/Contact";
+import MusicPlayer from "@/components/MusicPlayer/MusicPlayer";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Education />
       <Skills />
       <Contact />
+      {/* <MusicPlayer /> */}
     </motion.main>
   );
 }

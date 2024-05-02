@@ -8,9 +8,9 @@ import ProjectCard from "@/components/Sections/ProjectCard";
 
 export default function Projects() {
   const content = (
-    <motion.ul className="flex flex-col gap-5 w-full">
+    <motion.ul className="flex flex-col gap-5 w-full" variants={itemsVariants}>
       {projectsData.map((project) => (
-        <ProjectCard {...project} />
+        <ProjectCard {...project} key={project.id} />
       ))}
     </motion.ul>
   );
