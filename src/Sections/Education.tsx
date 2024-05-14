@@ -10,9 +10,11 @@ export default function Education() {
     <motion.ul className="flex flex-col gap-8" variants={itemsVariants}>
       {educationData.map((education) => (
         <motion.li key={education.id} className="flex flex-col gap-2" variants={itemsVariants}>
-          <h3 className="text- normal pb-2">
+          <h3 className="font-semibold text-sm pb-1">
             {education.title}{" "}
-            <span className="text-muted-foreground">- {education.establishment}</span>
+            <span className="text-muted-foreground font-normal text-xs">
+              - {education.establishment}
+            </span>
           </h3>
           <p className="text-muted-foreground font-normal text-xs">{education.description}</p>
           <span className="text-secondary-foreground text-[8px] font-normal">{education.date}</span>
