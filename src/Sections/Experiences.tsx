@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import experiencesData from "@/data/experiencesData";
+import experiencesData from "@/data/experiences.data";
 import { itemsVariants } from "@/lib/animations";
 
 import SectionsComp from "@/components/Sections/SectionsComp";

@@ -35,3 +35,8 @@ export type EducationtDataProps = {
   establishment: string;
   date: string;
 };
+
+export type HobbiesDataProps = {
+  id: number;
+  name: string;
+};

@@ -9,7 +9,7 @@ const skillsData: SkillDataProps[] = [
   {
     id: 1,
     name: "backend & databases",
-    technos: ["Node", "PHP", "Python", "Go", "PostgreSQL", "MongoDB"]
+    technos: ["Node", "PHP", "Python", "PostgreSQL", "MongoDB"]
   },
   {
     id: 2,
@@ -18,8 +18,13 @@ const skillsData: SkillDataProps[] = [
   },
   {
     id: 3,
-    name: "in progress",
-    technos: ["Rust", "Java", "Docker"]
+    name: "learning",
+    technos: ["Rust", "Java", "Docker", "Angular"]
+  },
+  {
+    id: 4,
+    name: "soft skills",
+    technos: ["Autonomy", "Communication", "Honesty", "Teamwork", "Problem solving"]
   }
 ];
 

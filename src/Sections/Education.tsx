@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import educationData from "@/data/educationData";
+import educationData from "@/data/education.data";
 import { itemsVariants } from "@/lib/animations";
 
 import SectionComp from "@/components/Sections/SectionsComp";

@@ -3,7 +3,7 @@ import { EducationtDataProps } from "@/utils/types";
 const educationData: EducationtDataProps[] = [
   {
     id: 0,
-    title: "MSC Pro - Cloud",
+    title: "MSC Pro Cloud",
     description: "Join the Pre MSC program from September 2024",
     establishment: "Epitech Rennes",
     date: "2024 - 2027"
