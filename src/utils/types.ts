@@ -40,3 +40,13 @@ export type HobbiesDataProps = {
   id: number;
   name: string;
 };
+
+export type MusicDataProps = {
+  id: number;
+  title: string;
+  artist: string;
+  coverUrl: string;
+  songUrl?: string;
+  duration?: string;
+  isPlaying?: boolean;
+};
