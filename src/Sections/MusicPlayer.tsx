@@ -1,8 +1,3 @@
-import musicData from "@/data/music.data";
-
-import MusicCard from "@/components/MusicPlayer/MusicCard";
-import AudioPlayer from "@/components/MusicPlayer/AudioPlayer";
-
 export default function MusicPlayer() {
   return (
     <section className="xs:hidden lg:fixed top-0 left-[70vw] p-8">
@@ -13,11 +8,6 @@ export default function MusicPlayer() {
             Discover more about me with some music selection
           </p>
         </div>
-        {/* <ul className="flex-col-start gap-2 p-6 mt-24">
-          {musicData.map((music) => (
-            <MusicCard key={music.id} {...music} />
-          ))}
-        </ul> */}
         <iframe
           className="mt-20"
           src="https://open.spotify.com/embed/playlist/37i9dQZF1EprvzpqQ4BCp6?utm_source=generator"
