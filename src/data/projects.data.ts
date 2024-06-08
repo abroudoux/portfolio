@@ -14,7 +14,7 @@ const projectsData: ProjectDataProps[] = [
     title: "notion-to-spotify",
     description: "From a Notion list launch randomly an album on Spotify",
     technos: ["JavaScript", "Notion API"],
-    repository: "https://github.com/abroudoux/notion-to-spotify-cli.git",
+    repository: "https://github.com/abroudoux/notion-to-spotify.git",
     status: "v1"
   },
   {
@@ -24,6 +24,14 @@ const projectsData: ProjectDataProps[] = [
     technos: ["Python", "Spotify API", "Github API"],
     repository: "https://github.com/abroudoux/spotify-autopush.git",
     status: "v1"
+  },
+  {
+    id: 3,
+    title: "pokemon-battle-simulator",
+    description: "REST API to simulate Pokemon duels",
+    technos: ["Go"],
+    repository: "https://github.com/abroudoux/pokemon-battle-simulator.git",
+    status: "wip"
   }
 ];
 
