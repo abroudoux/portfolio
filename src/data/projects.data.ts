@@ -3,14 +3,6 @@ import { ProjectDataProps } from "@/utils/types";
 const projectsData: ProjectDataProps[] = [
   {
     id: 0,
-    title: "highlights.io",
-    description: "Keep your discoveries of the past year at one place",
-    technos: ["Adonis", "TypeScript", "React", "TailwindCSS"],
-    repository: "https://github.com/abroudoux/highlights.io.git",
-    status: "wip"
-  },
-  {
-    id: 1,
     title: "notion-to-spotify",
     description: "From a Notion list launch randomly an album on Spotify",
     technos: ["JavaScript", "Notion API"],
@@ -18,7 +10,7 @@ const projectsData: ProjectDataProps[] = [
     status: "v1"
   },
   {
-    id: 2,
+    id: 1,
     title: "spotify-autopush",
     description: "Display on your Github profile the last album you listened",
     technos: ["Python", "Spotify API", "Github API"],
@@ -26,12 +18,12 @@ const projectsData: ProjectDataProps[] = [
     status: "v1"
   },
   {
-    id: 3,
+    id: 2,
     title: "pokemon-battle-simulator",
     description: "REST API to simulate Pokemon duels",
     technos: ["Go"],
     repository: "https://github.com/abroudoux/pokemon-battle-simulator.git",
-    status: "wip"
+    status: "v1"
   }
 ];
 

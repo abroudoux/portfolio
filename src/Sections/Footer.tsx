@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-full p-8 mt-16 text-center">
-      <p className="text-xs text-muted-foreground">
+      <p className="text-ms text-muted-foreground">
         © 2024 - Made with{" "}
         <span role="img" aria-label="heart" className="text-red-500">
           ❤️

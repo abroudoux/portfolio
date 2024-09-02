@@ -4,22 +4,22 @@ const skillsData: SkillDataProps[] = [
   {
     id: 0,
     name: "frontend",
-    technos: ["JavaScript", "TypeScript", "React", "TailwindCSS", "SCSS"]
+    technos: ["JavaScript", "TypeScript", "React", "Svelte", "TailwindCSS", "SCSS"]
   },
   {
     id: 1,
-    name: "backend & databases",
-    technos: ["Node", "PHP", "Python", "PostgreSQL", "MongoDB"]
+    name: "backend",
+    technos: ["Node (Nest, Adonis, Express)", "Go", "Pyhton"]
   },
   {
     id: 2,
     name: "tools & design",
-    technos: ["git", "Postman", "Figma"]
+    technos: ["Git", "Docker", "Postman", "Figma"]
   },
   {
     id: 3,
     name: "learning",
-    technos: ["Rust", "Java", "Docker", "Angular"]
+    technos: ["Java", "ThreeJs", "Angular"]
   },
   {
     id: 4,

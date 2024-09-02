@@ -12,7 +12,7 @@ export default function Header() {
       variants={itemsVariants}>
       <div className="flex flex-col gap-2">
         <h1 className="text-xl font-bold font-platypi">Arthur Broudoux</h1>
-        <span className="text-ms font-normal">Web Developper</span>
+        <span className="text-base font-normal">Web Developper & Open Source enjoyer</span>
       </div>
       <ul className="flex flex-row items-center gap-3 h-full">
         <li className="p-3 hover:bg-primary-foreground focus:bg-primary-foreground rounded">
