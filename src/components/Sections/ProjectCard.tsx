@@ -27,8 +27,8 @@ const ProjectCard: FC<ProjectDataProps> = (props) => {
         className="w-full p-6 rounded-lg border-border border-2 hover:border-3 flex-row-center-between group-hover:border-primary transition-colors">
         <div className="flex-col-start-start gap-2 w-7/8 h-full">
           <h3 className="text-ms flex items-end gap-2 font-semibold">{props.title}</h3>
-          <span className="text-secondary-foreground text-[8px] font-normal">[{props.status}]</span>
-          <p className="text-sm font-light text-muted-foreground">{props.description}</p>
+          <span className="text-secondary-foreground text-sm font-normal">[{props.status}]</span>
+          <p className="text-ms font-light text-muted-foreground">{props.description}</p>
         </div>
         <div className="h-full flex-col-center-center w-1/8">
           <ArrowUpRight size={24} />
